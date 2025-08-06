@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All About Cars</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header, nav, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to CarHub</h1>
+    <p>Your go-to guide for car lovers and buyers.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#types">Car Types</a></li>
+      <li><a href="#table">Car Comparison</a></li>
+      <li><a href="#media">Gallery</a></li>
+      <li><a href="#form">Booking Form</a></li>
+    </ul>
+  </nav>
+
+  <section id="types">
+    <h2>Popular Car Types</h2>
+    <ul>
+      <li>Sedan</li>
+      <li>SUV</li>
+      <li>Hatchback</li>
+      <li>Convertible</li>
+      <li>Truck</li>
+    </ul>
+
+    <h3>Top Features Car Buyers Look For</h3>
+    <ol>
+      <li>Fuel Efficiency</li>
+      <li>Safety Ratings</li>
+      <li>Affordability</li>
+      <li>Maintenance Cost</li>
+      <li>Performance</li>
+    </ol>
+  </section>
+
+  <section id="table">
+    <h2>Car Specification Comparison</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Fuel Type</th>
+          <th>Mileage (km/l)</th>
+          <th>Price ($)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Honda Civic</td>
+          <td>Petrol</td>
+          <td>16</td>
+          <td>22,000</td>
+        </tr>
+        <tr>
+          <td>Toyota Corolla</td>
+          <td>Petrol</td>
+          <td>17</td>
+          <td>21,000</td>
+        </tr>
+        <tr>
+          <td>Hyundai Ioniq</td>
+          <td>Hybrid</td>
+          <td>25</td>
+          <td>28,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="media">
+    <h2>Media Gallery</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Honda_Civic_2022.jpg" alt="Honda Civic 2022">
+    
+    <h3>Watch this Car Review</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NyhzSLzHe5I" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="form">
+    <h2>Book a Test Drive</h2>
+    <form action="submit.html" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="08012345678">
+      </fieldset>
+
+      <fieldset>
+        <legend>Test Drive Details</legend>
+        <label for="car">Select Car:</label>
+        <select name="car" id="car" required>
+          <option value="">-- Choose a car --</option>
+          <option value="civic">Honda Civic</option>
+          <option value="corolla">Toyota Corolla</option>
+          <option value="ioniq">Hyundai Ioniq</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" placeholder="Any special requests?" rows="4"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Confirmation</legend>
+        <label>
+          <input type="checkbox" name="agree" required> I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CarHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
